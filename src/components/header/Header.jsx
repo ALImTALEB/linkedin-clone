@@ -5,7 +5,6 @@ import SearchIcon from '@material-ui/icons/Search'
 const Header = () => {
   return (
     <div className='header' >
-    fghgfh
     
 
   <div className="header__left">
