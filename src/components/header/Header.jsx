@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles/Header.css"
 import SearchIcon from '@material-ui/icons/Search'
 import HomeIcon from '@material-ui/icons/Home'
-import SupervisorAccount from '@material-ui/icons/SupervisorAccount'
+import { Notifications, SupervisorAccount, Chat,Work } from '@material-ui/icons'
 
 import HeaderOption from './HeaderOption'
 
@@ -23,6 +23,11 @@ const Header = () => {
   <div className="header__right">
   <HeaderOption Icon={HomeIcon} title='Home' />
   <HeaderOption Icon={SupervisorAccount} title='My Network' />
+  <HeaderOption Icon={Work} title='Jobs' />
+  <HeaderOption Icon={Chat} title='Messaging' />
+  <HeaderOption Icon={Notifications} title='Notifications' />
+
+  <HeaderOption avatar="https://lh3.googleusercontent.com/ogw/ADea4I6EfoUe-I0Sh5sNZcAv5WFWGkiSM3C96Ic57ePQ=s32-c-mo" title="me" />
 
   </div>
     </div>

@@ -1,11 +1,16 @@
 import React from 'react'
 import './styles/HeaderOption.css'
 
-const HeaderOption = ({Icon, title}) => {
+import {Avatar} from '@material-ui/core'
+
+const HeaderOption = ({ avatar, Icon, title}) => {
   return (
-    <div className='HeaderOption' >
+    <div className='headerOption' >
     {Icon && <Icon className="headerOption__icon" />}
-    <h3 className='headeOption__title' >{title}</h3>
+    {avatar && 
+        <Avatar className="headerOption__icon" src={avatar} />
+    }
+    <h3 className='headerOption__title' >{title}</h3>
      </div>
   )
 }
