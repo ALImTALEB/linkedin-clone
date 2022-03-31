@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar' >
     <div className="sidebar__top">
-        <img src="" alt="" />
+        <img src="https://scontent.ftun16-1.fna.fbcdn.net/v/t31.18172-8/13503118_563110030528758_5751704816779063246_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5ELKxCQREagAX-XZJE4&_nc_ht=scontent.ftun16-1.fna&oh=00_AT8al6XNNyju8-rD7RQqm7EgRDzONk_5q8-ByPCprGwVmQ&oe=626D04AF" alt="" />
         <Avatar className='sidebar__avatar' />
         <h2>Ali Taleb</h2>
         <h4>ali@gmail.com</h4>
