@@ -9,6 +9,7 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay'
 
 
 import InputOption from './InputOption'
+import Post from './Post'
 
 const Feed = () => {
   return (
@@ -35,6 +36,12 @@ const Feed = () => {
                  color="#70B5F9" />
             </div>
         </div>
+      
+      {/* Post  */}
+      <Post name="Ali Taleb"
+         description="This is a test"
+         message="woow"
+       />
     </div>
   )
 }
