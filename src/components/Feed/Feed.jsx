@@ -11,6 +11,7 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay'
 import InputOption from './InputOption'
 import Post from './Post'
 import { db, auth } from '../Firebase/Firebase'
+import firebase from 'firebase/compat/app';
 
 const Feed = () => {
     const [input, setInput] = useState('')
@@ -33,7 +34,9 @@ const sendPost = (e) => {
     db.collection('posts').add({
         name: 'Ali Taleb',
         description: 'test firebase',
-        message:  ''
+        message:  input,
+        photoUrl: '',
+        timestamp: firebase.firestore.FieldValue.serverTimestamp() ,
     })
 }
 
@@ -63,8 +66,12 @@ const sendPost = (e) => {
         </div>
       
       {/* Post  */}
-      {posts.map((post) => ( 
-          <Post />
+      {posts.map(({id, data: {name ,description, message, photoUrl} }) => ( 
+          <Post 
+             key={id}
+             name={name}
+             
+           />
       ))}
       <Post name="Ali Taleb"
          description="This is a test"
