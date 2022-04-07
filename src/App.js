@@ -11,7 +11,6 @@ const App = () => {
     <div className='app' >
     <Header />
 
-    {/* body  */}
     <div className="app__body">
       <Sidebar />
       <Feed />
